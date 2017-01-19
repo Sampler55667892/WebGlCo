@@ -1,0 +1,29 @@
+﻿@{
+    ViewBag.Title = "Graph3D";
+}
+@Scripts.Render("~/bundles/three")
+@Scripts.Render("~/bundles/graph3d")
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="get">
+            <div>
+                <div id="canvas-frame" style="width:800px; height:550px;"></div>
+            </div>
+            <div>
+                <div>
+                    <div style="float:left"><font color="#0000ff"><label>2016/11</label></font></div>
+                    <div><span id="hs201611" style="padding-left:15px;"></span></div>
+                </div>
+                <div>
+                    <div style="float:left"><font color="#ff00ff"><label>2016/12</label></font></div>
+                    <div><span id="hs201612" style="padding-left:15px;"></span></div>
+                </div>
+                <div>
+                    <div style="float:left"><font color="#ff0000"><label>2017/01</label></font></div>
+                    <div><span id="hs201701" style="padding-left:15px;"></span></div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
